@@ -362,7 +362,7 @@
         numero = typeof numero === "string" ? numero.replace(",", ".") : numero;
         var partes = numero.toString().split(".");
         var entero = parseInt(partes[0], 10);
-        var decimales = partes[1] ? parseInt(partes[1].substring(0,2), 10) : 0;
+        var decimales = partes[1] ? parseInt((partes[1]+'00').substring(0,2), 10) : 0;
         const unidades = [
           "",
           "UN",
